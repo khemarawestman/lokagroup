@@ -1,0 +1,19 @@
+body, html {
+	display: flex;
+}
+
+li {
+	list-style: none;
+}
+
+#top {
+	
+	background: black;
+	color: white;
+}
+
+.brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 24px;
+}
+
