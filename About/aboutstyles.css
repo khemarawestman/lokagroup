@@ -1,0 +1,335 @@
+/* default */
+body, html {
+	height: 100%;
+	margin:0 auto;
+	font-family: 'PT Sans', sans-serif;
+}
+
+html, body, h1, ul, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* end default */
+
+
+/* navbar */
+
+#navbar {
+	height: 50px;
+	border-bottom: 1px solid black;
+	background: rgba(50, 50, 50, 1);
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
+	}
+
+#navbar .flexContainer {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	align-items: center;
+}
+
+#navbar .flexContainer ul {
+	display: flex;
+	list-style: none;
+}
+
+#navbar .flexContainer li {
+	padding-left: 30px;
+}
+
+#navbar .flexContainer h2 a{
+	color: white; 
+	font-size: 30px;
+	font-family: 'Righteous', cursive;
+}
+
+#navbar .flexContainer li a {
+	font-family: 'Russo One', sans-serif;
+	color: white;
+	font-size: 20px;
+	text-shadow: 1px 1px black;	
+	letter-spacing: 2px;
+}
+
+#navbar .divider {
+	margin-right: 40px;
+}
+
+#navbar .flexContainer li a:hover {
+	animation: changeColor 1s;
+	animation-fill-mode: forwards;
+}
+
+
+#navbar > .flexContainer > .nav .active, #navbar > .flexContainer > .dropdown .active {
+	color: #b08c4f;
+}
+
+
+#navbar ul:nth-of-type(2) {
+	display: none;
+}
+
+
+/* animation */
+
+@keyframes changeColor{
+	to {
+		color:  #b08c4f;
+		text-shadow: 1px 1px black;
+	}
+}
+
+/* end animation */
+
+
+
+
+@media (max-width: 770px) {
+	#navbar ul:nth-of-type(1) {
+		display: none;
+	}
+
+	#navbar ul:nth-of-type(2) {
+		display: inline-block;
+		position: relative;
+
+	}
+
+	#navbar .dropNav {
+		display: none;
+		position: absolute;
+		right: 0;
+		background-color:rgba(50, 50, 50, 1);
+		box-shadow: 0 8px 16px 0;
+		min-width: 150px;
+		opacity: 0.9;
+	}
+
+	#navbar .dropNav a {
+		display: block;
+		width: 75%;
+		border-bottom:1px solid black;
+		text-align: center;
+		margin: 10px 0 10px 0;
+	}
+
+	#navbar #burgermenu {
+		width: 45px;
+		height: 45px;
+	}
+	
+
+	#navbar .dropdown:hover .dropNav {
+		display: block;
+	}
+
+	
+
+
+
+
+}
+
+/* end navbar */
+
+
+
+
+/* main content */
+
+
+
+
+
+
+
+
+
+.mainFlex {
+	display: flex;
+}
+
+.mainFlex  .center{
+ 	animation: fadein 8s;
+ 	color: white;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+  	margin: -100px 0 0 -150px;
+  	text-align: center;
+  	font-family: 'Righteous', cursive;
+  	text-shadow: 2px 2px 5px black;
+}
+
+.mainFlex .center  h1 {
+	font-size: 90px;
+	letter-spacing: 10px;
+}
+
+
+
+
+/* animations */
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* end animations */
+
+
+.bgPic, .bgPic2, .bgPic3, .bgPic4, .bgSpacer {
+  	position: relative;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.bgPic2, .bgPic3, .bgPic4{
+  	border-top: 20px solid rgba(50, 50, 50, 0.8);
+  	border-bottom: 20px solid rgba(50, 50, 50, 0.8);
+}
+
+
+.bgPic {
+	background-image: url("bg.jpg");
+  	min-height: 100%;
+ 
+}
+
+.bgPic2 {
+	background-image: url("bg2.jpg");
+	min-height: 40%
+}
+
+.bgPic3 {
+	background-image: url("bg3.jpg");
+	min-height: 40%
+}
+
+.bgPic4 {
+	background-image: url("bg4.jpg");
+	min-height: 40%
+}
+
+.bgSpacer {
+	min-height: 10%;
+	background-image: url("bg.jpg");
+}
+
+
+.onPicFlex {
+	display: flex;
+}
+
+.onPicFlex .profilePic {
+  	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+
+	width: 200px;
+	height:250px;
+	border-radius: 5px;
+
+	margin:5%;
+}
+
+.profilePic1 {
+	background-image: url("joachim.jpg");
+}
+
+.porfilePic2 {
+	background-image: url("martin.jpg");
+}
+
+.profilePic3 {
+	background-image: url("erik.jpg");
+}
+
+.onPicFlex .aboutMe {
+	width: 70%;
+	margin:5% 0 5%;
+	padding: 2%;
+	background: linear-gradient(to left, rgba(50,50,50,0), rgba(50,50,50,0.7));
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.onPicFlex .aboutMe p {
+	font-size: 19px;
+}
+.onPicFlex .aboutMe h2 {
+	font-size: 25px;
+}
+
+
+.onPicFlex .gradientDirection {
+	background: linear-gradient(to right, rgba(50,50,50,0), rgba(50,50,50,0.7));
+}
+
+.bgPic3 {
+	text-align: right;
+}
+
+
+ 
+
+
+
+
+
+
+/* end main content */
+
+/* footer */
+
+footer {
+	display: flex;
+	padding: 0;
+	background: rgba(50,50,50, 1);
+	color: white;
+	z-index: 10000;
+}
+
+footer div {
+	flex-grow: 1;
+	margin:0 2% 0 2%;
+	text-align: center;
+}
+
+footer div a {
+	color:white;
+}
+
+footer div h1 {
+	margin-top:2%; 	
+	font-size: 20px;
+}
+
+
+@media (max-width: 570px) {
+	footer {
+		flex-direction: column;
+
+	}
+}
+
+/* end footer */

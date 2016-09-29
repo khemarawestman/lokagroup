@@ -1,7 +1,9 @@
 /* default */
+
 body, html {
 	height: 100%;
 	margin:0 auto;
+	font-family: 'PT Sans', sans-serif;
 }
 
 html, body, h1, ul, header {
@@ -53,11 +55,12 @@ a {
 }
 
 #navbar .flexContainer li a {
-	font-family: 'Cinzel', serif;
+	font-family: 'Russo One', sans-serif;
 	color: white;
 	font-size: 20px;
 	font-weight: 700;
 	text-shadow: 1px 1px black;	
+	letter-spacing: 2px;
 }
 
 #navbar .divider {
