@@ -1,8 +1,13 @@
 /* default */
-
 body, html {
 	height: 100%;
 	font-family: 'PT Sans', sans-serif;
+}
+
+body {
+	margin:0;
+	padding: 0;
+	border: 0;
 }
 
 html, body, h1, ul, header {
@@ -24,7 +29,7 @@ a {
 #navbar {
 	height: 50px;
 	border-bottom: 1px solid black;
-	background: rgba(50, 50, 50, 0.6);
+	background: rgba(50, 50, 50, 1);
 	position: fixed;
 	width: 100%;
 	z-index: 10000;
@@ -73,7 +78,8 @@ a {
 }
 
 
-#navbar > .flexContainer > .nav .active, #navbar > .flexContainer > .dropdown .active {
+#navbar > .flexContainer > .nav .active, #navbar > 
+.flexContainer > .dropdown .active {
 	color: #b08c4f;
 }
 
@@ -112,7 +118,7 @@ a {
 		display: none;
 		position: absolute;
 		right: 0;
-		background-color:rgba(50, 50, 50, 1);
+		background-color:rgba(50, 50, 50, 0.6);
 		box-shadow: 0 8px 16px 0;
 		min-width: 150px;
 		opacity: 0.9;
@@ -151,66 +157,21 @@ a {
 /* main content */
 
 
-.bgPic {
-	background-image: url(test.jpg);
-  	position: relative;
-  	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
+.introContent {
   	min-height: 100%;
-  	
+	
+}
+
+.middleContent {
+	min-height: 40%;
 }
 
 
-#mainFlex {
-	display: flex;
-}
-
-#mainFlex  .center{
- 	animation: fadein 8s;
- 	color: white;
- 	position: fixed;
- 	top: 50%;
- 	left: 50%;
-  	margin: -100px 0 0 -150px;
-  	text-align: center;
-  	font-family: 'Righteous', cursive;
-  	text-shadow: 2px 2px 5px black;
-}
-
-#mainFlex .center  h1 {
-	font-size: 90px;
-	letter-spacing: 10px;
-}
-
-#mainFlex .center  p {
-	font-size: 18px;
-}
-
-
-#mainFlex .center > hr {
-	border: none;
-	box-shadow: 2px 2px 5px black;
-	margin: -5px;
-	height: 10px;
-	background:white;
-}
-
-
-/* animations */
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
+@media (max-width: 600px) {
+	.onPicFlex {
+		padding: 60px 0;
 	}
 }
-
-/* end animations */
-
 
 
 /* end main content */
@@ -222,6 +183,7 @@ footer {
 	padding: 0;
 	background: rgba(50,50,50, 1);
 	color: white;
+	z-index: 1000000;
 }
 
 footer div {
