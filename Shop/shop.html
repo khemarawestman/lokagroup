@@ -2,11 +2,13 @@
 
 <html lang="en">
 <head>
-	<title>Facile</title>
+	<title>FACILE Official Website</title>
 	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="shopstyles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans%7CRighteous%7CRusso+One" rel="stylesheet">
+
 </head>
 <body>
 
@@ -17,25 +19,24 @@
 	<nav class="flexContainer">
 
 		<h2><a href="../index.html">Facile</a></h2>
-
 		<ul class="nav">
 			<li><a href="../index.html">Home</a></li>
-			<li><a href="#" class="divider">Shop</a></li>
-			<li><a href="#">Blog</a></li>
+			<li><a href="shop.html" class="divider active">Shop</a></li>
+			<li><a href="../Blog/blog.html">Blog</a></li>
 			<li><a href="#">Forum</a></li>
 			<li><a href="../About/about.html">About</a></li>
-			<li><a href="contact.html" class="active">Contact</a></li>
+			<li><a href="../Contact/contact.html">Contact</a></li>
 		</ul>
 
 		<ul class="dropdown">
-			<li><a href="#"><img src="burgermenu.png" id="burgermenu" alt="dropdown"></a>
+			<li><img src="burgermenu.png" id="burgermenu" alt="dropdown">
 				<ul class="dropNav">
 					<li><a href="../index.html">Home</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="shop.html" class="active">Shop</a></li>
+					<li><a href="../Blog/blog.html">Blog</a></li>
 					<li><a href="#">Forum</a></li>
 					<li><a href="../About/about.html">About</a></li>
-					<li><a href="contact.html" class="active">Contact</a></li>
+					<li><a href="../Contact/contact.html">Contact</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -48,12 +49,78 @@
 
 <!--content-->
 
+<div class="userData">
+<form>
+	<div class="login"><input type="text" placeholder="Your Email" class="email" required><input type="password" placeholder="Password" class="password"><input type="checkbox" name="rememberme" id="rememberMeText1"><span class="rememberMe"><label for="rememberMeText1">Remember me</label></span>&nbsp;<button>Login</button>&nbsp;<button>Register</button></div>
+</form>
+</div>
+<div class="userData2">
+<form>
+	<div class="login"><br><input type="text" placeholder="Your Email" class="email"><br><input type="password" placeholder="Password" class="password"><br><input type="checkbox" name="rememberme"><span class="rememberMe">remember me</span><br><button>Login</button>&nbsp;<button>Register</button></div>
+</form>
+</div>
+
+
 <div class="introContent">
+
+<h1>All <br>about <br>you</h1>
+
+<div class="scrollDown"><h3>Scroll down to view products</h3></div>
 
 </div>
 
+<div class="topContent">
+	<div><strong>Price range:</strong><br>
+	<select class="selectStyle">
+		<option value="100to1000">100-100$</option>
+		<option value="1000to2000">100-200$</option>
+		<option value="2000to3000">200-300$</option>
+		<option value="3000to4000">300- 400$</option>
+	</select>
+	</div>
+	<div><strong>Brand:</strong><br>
+	<input type="checkbox" name="elk">Elk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="checkbox" name="facile">Facile<br>
+	<input type="checkbox" name="warm">Warm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="checkbox" name="waterfall">Waterfall<br>
+	<input type="checkbox" name="mushroom">Mushroom
+	<input type="checkbox" name="defender">Defender
+
+	</div>
+	<div><strong>Size:</strong><br>
+	<input type="radio" name="xs">XS
+	<input type="radio" name="xs">S<br>
+	<input type="radio" name="xs">M&nbsp;
+	<input type="radio" name="xs">L<br>
+	<input type="radio" name="xs">XL
+	<input type="radio" name="xs">XXL
+	</div>
+</div>
+
+
 <div class="middleContent">
-	
+
+<div class="productDisplay">
+	<div>
+		<a href="#"><h3>Backpain<br><br><br><br></h3><br></a>
+	</div>
+	<div><a href="#"><h3>Weather Shield<br><br><br><br></h3></a>
+	</div>
+	<div><a href="#"><h3>Rain Protector<br><br><br><br></h3></a></div>
+	<div><a href="#"><h3>Snoozers Dream<br><br><br><br></h3></a></div>
+	<div><a href="#"><h3>Fishing Stick<br><br><br><br></h3></a></div>
+	<div><a href="#"><h3>Dislocated App<br><br><br><br></h3></a></div>
+	<div><a href="#"><h3>Feet Cushions<br><br><br><br></h3></a></div>
+	<div><a href="#"><h3>Wind Resistor<br><br><br><br></h3></a></div>
+	<div><a href="#"><h3>Sharp Object<br><br><br><br></h3></a></div>
+</div>
+<div class="pager">
+	<div><a href="#">&lt;&lt;</a></div>
+	<div id="currentPage"><a href="#">1</a></div>
+	<div><a href="#">2</a></div>
+	<div><a href="#">3</a></div>
+	<div><a href="#">>></a></div>
+</div>
 </div>
 
 <!--end content-->
